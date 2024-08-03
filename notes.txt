@@ -56,3 +56,7 @@ App name :
 
 apply data to database (sqlite3):
     python manage.py migrate 
+
+create SuperUser :
+    python3 manage.py createsuperuser
+
