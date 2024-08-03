@@ -60,3 +60,8 @@ apply data to database (sqlite3):
 create SuperUser :
     python3 manage.py createsuperuser
 
+database (models.py)
+اختبار تنفيذ الداتا
+python manage.py makemigrations
+تنفيذ الداتا
+python manage.py migrate
