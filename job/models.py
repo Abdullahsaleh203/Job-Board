@@ -8,6 +8,12 @@ Model field reference¶
 https://docs.djangoproject.com/en/5.0/ref/models/fields/
 '''
 # Create your models here.
+'''
+    Django models field
+    -html widget 
+    -validation
+    -db size
+'''
 JOB_TYPE =(
     ('Full Time','Full Time'),
     ('Part Time','Part Time'),
