@@ -22,6 +22,8 @@ class Job(models.Model):
     title = models.CharField(max_length=100) # Column
     job_type = models.CharField(max_length=100 ,choices=JOB_TYPE)
     description= models.TextField(max_length=1000)
+    published_at= models.DateTimeField(auto_now=True)
+    Vacancy= models.IntegerField(default=1)
     
     # image = models.ImageField(upload_to='images/')
     # summary = models.CharField(max_length=200)
