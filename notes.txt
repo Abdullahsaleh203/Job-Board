@@ -1,0 +1,48 @@
+python -m pip install Django
+python -m pip install -U pip
+django-admin startproject project .
+python manage.py runserver
+
+*****
+same commit
+python manage.py startapp nameOfApp
+python manage.py startapp posts
+python manage.py startapp blog
+
+*****
+python3 -m venv .venv
+
+.\.venv\Scripts\activate
+
+*****
+settings in vs code
+emmet 
+change type =
+    ________________________
+   | item         |  value  |
+   |______________|_________|
+   | django-html  |  html   |
+   |______________|_________|
+*******
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+ 
+.\.venv\Scripts\Activate.ps1
+source .venv/bin/activate
+
+python -m venv .venv
+
+
+--------------
+python manage.py migrate 
+python manage.py makemigrations
+python manage.py migrate
+---------------
+>>>> shell
+python manage.py shell
+>>>
+from posts.models import Post
+
+=======
+python manage.py creatsuperuser
+
+pip freeze > requirement.txt
