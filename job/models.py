@@ -24,6 +24,8 @@ class Job(models.Model):
     description= models.TextField(max_length=1000)
     published_at= models.DateTimeField(auto_now=True)
     Vacancy= models.IntegerField(default=1)
+    salary = models.IntegerField(default=0)
+    experience = models.IntegerField(default=1)
     
     # image = models.ImageField(upload_to='images/')
     # summary = models.CharField(max_length=200)
