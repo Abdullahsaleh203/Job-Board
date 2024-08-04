@@ -2,6 +2,7 @@ python -m pip install Django
 python -m pip install -U pip
 django-admin startproject project .
 python manage.py runserver
+python -m pip install --upgrade pip
 
 *****
 same commit
@@ -45,6 +46,8 @@ from posts.models import Post
 python manage.py creatsuperuser
 
 pip freeze > requirement.txt
+
+pip install -r requirement.txt
 ----------------- المشروع الجديد------
 Project name : Job Board
 App name : 

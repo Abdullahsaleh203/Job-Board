@@ -8,7 +8,7 @@ Job :
     - salary
     - category
     - experience 
-    
+
 
     - apply job 
     - post job
