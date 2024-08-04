@@ -6,9 +6,13 @@ Job :
     - published at
     - Vacancy
     - salary
-    - category
+    - category :
+      - Django Follows the 3 model Relationships:
+        2- One-To-Many Relationship like [ author - Post ] Foreginkey
+        1- One-To-One Relationship like  [ User - Profile ]
+        3- Many-To-Many Relationship like [User - Group]
     - experience 
-    
+
 
     - apply job 
     - post job
@@ -29,5 +33,8 @@ Blog :
 contact
 home
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1ecb008f78279aebdf3b19b2d00c3b073d0ccfe6
 login 
