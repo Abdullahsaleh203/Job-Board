@@ -71,3 +71,7 @@ python manage.py migrate
 
 تحقق من تهجئة الحقول والأسماء:
 python manage.py showmigrations
+
+
+مكتبه لتعامل مع الصور 
+python3 -m pip install Pillow 
