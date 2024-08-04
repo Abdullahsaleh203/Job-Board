@@ -33,4 +33,8 @@ Blog :
 contact
 home
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 1ecb008f78279aebdf3b19b2d00c3b073d0ccfe6
 login 
