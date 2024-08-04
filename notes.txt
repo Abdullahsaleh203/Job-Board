@@ -68,3 +68,6 @@ database (models.py)
 python manage.py makemigrations
 تنفيذ الداتا
 python manage.py migrate
+
+تحقق من تهجئة الحقول والأسماء:
+python manage.py showmigrations

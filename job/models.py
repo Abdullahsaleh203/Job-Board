@@ -27,7 +27,7 @@ class Job(models.Model):
     salary = models.IntegerField(default=0)
     experience = models.IntegerField(default=1)
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
-    
+    # category = models.ForeignKey(Category, on_delete=models.CASCADE)
     def __str__(self):
         return self.title
     
