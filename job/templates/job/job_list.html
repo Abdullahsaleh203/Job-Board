@@ -1,1 +1,7 @@
 <h1>job_list</h1>
+
+{% for job in jobs %}
+    <h2>{{ job }}</h2>
+    <h2>{{ job.title }}</h2>
+    <p>{{ job.description }}</p>
+{% endfor %}
