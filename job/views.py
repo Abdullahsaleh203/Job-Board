@@ -12,6 +12,7 @@ def job_list(request) :
 
     Returns:
     - A rendered HTML template displaying the list of jobs.
+    context: A dictionary containing the job list
     """
     job_list=Job.objects.all()
     return render(request,'job/job_list.html',
