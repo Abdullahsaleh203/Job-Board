@@ -82,3 +82,7 @@ Built-in template tags and filters:
 
 Pagination ¶ : number of website page
     https://docs.djangoproject.com/en/5.0/topics/pagination/
+
+
+Logging ¶ :
+    https://docs.djangoproject.com/en/5.0/topics/logging/#topic-logging-parts-loggers
