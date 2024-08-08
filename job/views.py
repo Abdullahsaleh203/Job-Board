@@ -16,12 +16,12 @@ def job_list(request) :
     """
     job_list=Job.objects.all()
 
-    context= {'job_list':job_list} # template context name 
+    context= {'jobs':job_list} # template context name 
     
     return render(request,'job/job_list.html',context)
 
 
 def job_detail(request,id) :
     job_detail=Job.objects.get(id=id)
-    context= {'job_detail':job_detail} # template context name
-    return render(request,'job/job_detail.html',context)
+    context= {'job':job_detail} # template context name
+    return render(request,'job/job_details.html',context)
