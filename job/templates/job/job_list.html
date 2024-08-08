@@ -129,6 +129,7 @@
                                 <div class="single_jobs white-bg d-flex justify-content-between">
                                     <div class="jobs_left d-flex align-items-center">
                                         <div class="thumb">
+                                            {% comment %} <img src="{{ job.image.url }}" alt=""> {% endcomment %}
                                             <img src="img/svg_icon/1.svg" alt="">
                                         </div>
                                         <div class="jobs_conetent">
@@ -149,7 +150,7 @@
                                             <a href="job_details.html" class="boxed-btn3">Apply Now</a>
                                         </div>
                                         <div class="date">
-                                            <p>{{ job.published_at|date:'d M o' }}</p>
+                                            <p>{{ job.published_at|date:'d M o' }}</p> <!-- Date day month year -->
                                         </div>
                                     </div>
                                 </div>
