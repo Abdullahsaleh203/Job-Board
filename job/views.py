@@ -23,7 +23,6 @@ def job_list(request) :
     context= {'jobs':page_obj} # template context name 
     return render(request,'job/job_list.html',context)
 
-
 def job_detail(request,slug) :
     job_detail=Job.objects.get(slug=slug)
     context= {'job':job_detail} # template context name
