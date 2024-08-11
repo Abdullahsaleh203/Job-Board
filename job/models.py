@@ -42,6 +42,7 @@ class Job(models.Model):
     def save(self,*arg, **kwargs):
         self.slug=slugify(self.title)
         super(Job,self).save(*arg, **kwargs)
+
 class Category(models.Model):
     name= models.CharField(max_length=25)
     
@@ -58,4 +59,4 @@ class Apply(models.Model):
     
     def __str__(self):
         return self.name    
-
+    
