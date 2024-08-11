@@ -86,3 +86,6 @@ Pagination ¶ : number of website page
 
 Logging ¶ :
     https://docs.djangoproject.com/en/5.0/topics/logging/#topic-logging-parts-loggers
+
+library :
+    pip install django-bootstrap4 
