@@ -88,4 +88,6 @@ Logging ¶ :
     https://docs.djangoproject.com/en/5.0/topics/logging/#topic-logging-parts-loggers
 
 library :
+    Documentation :
+        https://django-bootstrap4.readthedocs.io/en/latest/installation.html
     pip install django-bootstrap4 
