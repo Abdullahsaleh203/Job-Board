@@ -37,3 +37,7 @@ def job_detail(request,slug) :
         form = ApplyForm()
     context= {'job':job_detail ,'form':form} # template context name
     return render(request,'job/job_details.html',context)
+
+def add_job(request) :
+    context= {} # template context name
+    return render(request,'job/add_job.html',context)

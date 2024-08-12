@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text">
-                        <h3>{{ job }}</h3>
+                        <h3>Add New Job</h3>
                     </div>
                 </div>
             </div>
@@ -22,7 +22,7 @@
     <div class="job_details_area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-10 mx-auto">
                     <div class="job_details_header">
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
@@ -82,7 +82,7 @@
                         <h4>Apply for the job</h4>
                         <form action="#" method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
-                            {% bootstrap_form form %}
+                            {% comment %} {% bootstrap_form form %} {% endcomment %}
                             {% buttons %}
                             <button class="boxed-btn3 w-100" type="submit">Apply Now</button>
                             {% endbuttons %}
@@ -130,7 +130,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                {% comment %} <div class="col-lg-4">
                     <div class="job_sumary">
                         <div class="summery_header">
                             <h3>Job Summery</h3>
@@ -184,7 +184,7 @@
                             
                           </div>
                     </div>
-                </div>
+                </div> {% endcomment %}
             </div>
         </div>
     </div>
