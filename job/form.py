@@ -1,5 +1,5 @@
 from django import forms
-from .models import Apply
+from .models import Apply , Job
 
 
 class ApplyForm(forms.ModelForm):
@@ -14,12 +14,17 @@ class ApplyForm(forms.ModelForm):
         #     'cover_letter':forms.Textarea(attrs={'class':'form-control'}),
         # }
 
-# class JobForm(forms.Form):
-#     title = forms.CharField(max_length=100)
-#     job_type = forms.ChoiceField(choices=(('Full Time','Full Time'),('Part Time','Part Time')))
-#     description= forms.CharField(widget=forms.Textarea)
-#     Vacancy= forms.IntegerField()
-#     salary= forms.IntegerField()
-#     experience= forms.IntegerField()
-#     category= forms.CharField(max_length=25)
-#     image= forms.ImageField()
+class JobForm(forms.ModelForm):
+    class Meta:
+        model = Job
+        fields = '__all__'
+        exclude = ('slug',)
+
+    # title = forms.CharField(max_length=100)
+    # job_type = forms.ChoiceField(choices=(('Full Time','Full Time'),('Part Time','Part Time')))
+    # description= forms.CharField(widget=forms.Textarea)
+    # Vacancy= forms.IntegerField()
+    # salary= forms.IntegerField()
+    # experience= forms.IntegerField()
+    # category= forms.CharField(max_length=25)
+    # image= forms.ImageField()

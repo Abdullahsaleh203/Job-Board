@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <div class="job_details_header">
+                    {% comment %} <div class="job_details_header">
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
@@ -47,13 +47,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="descript_wrap white-bg">
+                    </div> {% endcomment %}
+                    {% comment %} <div class="descript_wrap white-bg">
                         <div class="single_wrap">
                             <h4>Job description</h4>
-                            <p>{{ job.description }}.</p>
-                        </div>
-                        {% comment %} <div class="single_wrap">
+                            <p>{{ job.description }}.</p> {% endcomment %}
+                        {% comment %}</div>
+                         <div class="single_wrap">
                             <h4>Responsibility</h4>
                             <ul>
                                 <li>The applicants should have experience in the following areas.
@@ -76,15 +76,15 @@
                         <div class="single_wrap">
                             <h4>Benefits</h4>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
-                        </div> {% endcomment %}
-                    </div>
+                        </div> 
+                    </div>{% endcomment %}
                     <div class="apply_job_form white-bg">
-                        <h4>Apply for the job</h4>
+                        <h4>Post New Job</h4>
                         <form action="#" method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
-                            {% comment %} {% bootstrap_form form %} {% endcomment %}
+                            {% bootstrap_form form %}
                             {% buttons %}
-                            <button class="boxed-btn3 w-100" type="submit">Apply Now</button>
+                            <button class="boxed-btn3 w-100" type="submit">Post Now</button>
                             {% endbuttons %}
                             {% comment %} <div class="row">
                                 <div class="col-md-6">

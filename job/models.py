@@ -23,6 +23,9 @@ JOB_TYPE =(
     ('Part Time','Part Time'),
 )
 class Job(models.Model):
+
+    owner = models.ForeignKey(User,related_name='',on_delete=models.CASCADE) #ُError: NameError: name 'User' is not defined
+    # owner = models.ForeignKey('auth.User',related_name='job_owner',on_delete=models.CASCADE)
     title = models.CharField(max_length=100) # Column
     # location
     job_type = models.CharField(max_length=100 ,choices=JOB_TYPE)
