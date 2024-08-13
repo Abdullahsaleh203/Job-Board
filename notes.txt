@@ -1,5 +1,6 @@
 python -m pip install Django
 python -m pip install -U pip
+python -m pip install --upgrade pip
 django-admin startproject project .
 python manage.py runserver
 python -m pip install --upgrade pip

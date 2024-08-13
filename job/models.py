@@ -1,6 +1,6 @@
 from django.db import models # type: ignore
 from django.utils.text import slugify  # type: ignore
-
+from django.contrib.auth.models import User
 
 
 '''
@@ -24,7 +24,7 @@ JOB_TYPE =(
 )
 class Job(models.Model):
 
-    owner = models.ForeignKey(User,related_name='',on_delete=models.CASCADE) #ُError: NameError: name 'User' is not defined
+    owner = models.ForeignKey(User, related_name='job_owner', on_delete=models.CASCADE) #ُError: NameError: name 'User' is not defined
     # owner = models.ForeignKey('auth.User',related_name='job_owner',on_delete=models.CASCADE)
     title = models.CharField(max_length=100) # Column
     # location
