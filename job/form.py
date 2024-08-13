@@ -18,7 +18,7 @@ class JobForm(forms.ModelForm):
     class Meta:
         model = Job
         fields = '__all__'
-        exclude = ('slug',)
+        exclude = ('owner','slug',)
 
     # title = forms.CharField(max_length=100)
     # job_type = forms.ChoiceField(choices=(('Full Time','Full Time'),('Part Time','Part Time')))
