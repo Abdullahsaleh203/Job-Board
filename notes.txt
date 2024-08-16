@@ -46,7 +46,7 @@ from posts.models import Post
 =======
 python manage.py creatsuperuser
 
-pip freeze > requirement.txt
+pip freeze >> requirement.txt
 
 pip install -r requirement.txt
 ----------------- المشروع الجديد------
