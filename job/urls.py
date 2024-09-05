@@ -9,7 +9,6 @@ urlpatterns = [
     path('<str:slug>',views.job_detail ,name='job_detail'),
 ]
 
-
 # urlpatterns = [
 #     path('',views.job_detail ),
 #     path('<int:id>',views.job_list ),
