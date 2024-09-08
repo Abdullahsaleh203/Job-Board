@@ -28,6 +28,7 @@ change type =
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
  
 .\.venv\Scripts\Activate.ps1
+
 source .venv/bin/activate
 
 python -m venv .venv
