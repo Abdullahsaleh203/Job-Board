@@ -12,7 +12,6 @@ Job :
         1- One-To-One Relationship like  [ User - Profile ]
         3- Many-To-Many Relationship like [User - Group]
     - experience 
-
     - apply job 
     - post job
 
