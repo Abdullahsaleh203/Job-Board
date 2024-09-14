@@ -24,14 +24,12 @@ Blog :
     - category
     - tags
     - author
-
     - search
     - comment
     - recent posts
 
 contact
 home
-
 
 =======
 login 
