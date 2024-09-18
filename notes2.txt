@@ -31,7 +31,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 source .venv/bin/activate
 
-python -m venv .venv
+python3 -m venv .venv
 
 
 --------------
@@ -47,7 +47,7 @@ from posts.models import Post
 =======
 python manage.py creatsuperuser
 
-pip freeze >> requirements.txt
+pip freeze > requirements.txt
 
 pip install -r requirements.txt
 ----------------- المشروع الجديد------
