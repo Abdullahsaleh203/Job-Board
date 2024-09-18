@@ -13,6 +13,7 @@ def job_list(request) :
     Parameters:
     - request: The HTTP request object.
 
+    
     Returns:
     - A rendered HTML template displaying the list of jobs.
     context: A dictionary containing the job list
