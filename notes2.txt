@@ -1,20 +1,24 @@
+*****
+python3 -m venv .venv
+---
+
+source .venv/bin/activate
+.\.venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
+
+*****
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
+
+*****
 python -m pip install Django
 python -m pip install -U pip
 python -m pip install --upgrade pip
 django-admin startproject project .
-python manage.py runserver
-python -m pip install --upgrade pip
-
-*****
-same commit
 python manage.py startapp nameOfApp
-python manage.py startapp posts
-
-*****
-python3 -m venv .venv
-
-.\.venv\Scripts\activate
-
+python manage.py runserver
+python manage.py createsuperuser
 *****
 settings in vs code
 emmet 
@@ -27,11 +31,6 @@ change type =
 *******
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
  
-.\.venv\Scripts\Activate.ps1
-
-source .venv/bin/activate
-
-python3 -m venv .venv
 
 
 --------------
@@ -45,11 +44,7 @@ python manage.py shell
 from posts.models import Post
 
 =======
-python manage.py creatsuperuser
 
-pip freeze > requirements.txt
-
-pip install -r requirements.txt
 ----------------- المشروع الجديد------
 Project name : Job Board
 App name : 
@@ -96,3 +91,28 @@ library :
         https://django-bootstrap4.readthedocs.io/en/latest/installation.html
         
     pip install django-bootstrap4 
+------------------- this Project ----
+  check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
