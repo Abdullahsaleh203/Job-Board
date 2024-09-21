@@ -13,6 +13,7 @@ class Profile(models.Model):
     # birth_date = models.DateField(null=True, blank=True)
     def __str__(self):
         return self.user
+    
 
 
 @receiver(post_save, sender=User)
