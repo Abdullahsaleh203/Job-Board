@@ -18,7 +18,7 @@ class Profile(models.Model):
 
 @receiver(post_save, sender=User)
 def user_created(sender, instance, created, **kwargs):
-   if created:
+    if created:
         Profile.objects.create(User=instance)
 class City(models.Model):
     name = models.CharField(max_length=100)
