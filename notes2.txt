@@ -19,6 +19,7 @@ django-admin startproject project .
 python manage.py startapp nameOfApp
 python manage.py runserver
 python manage.py createsuperuser
+
 *****
 settings in vs code
 emmet 
