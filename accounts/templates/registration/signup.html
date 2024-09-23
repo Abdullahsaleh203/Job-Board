@@ -5,11 +5,8 @@
     <form method="post">
         {% csrf_token %}
         {% bootstrap_form form %}
-        <input type="submit" value="login" class="boxed-btn3 w-100"/>
+        <input type="submit" value="signup" class="boxed-btn3 w-100"/>
     </form>
     
-  
-  
-  {# Assumes you setup the password_reset view in your URLconf #}
-  
+
 {% endblock content %}
