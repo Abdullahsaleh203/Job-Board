@@ -9,6 +9,8 @@ class Profile(models.Model):
     phone_number = models.CharField(max_length=15)
     image = models.ImageField(upload_to='profile/')
     
+    
+    
     def __str__(self):
         return str(self.user)
 
