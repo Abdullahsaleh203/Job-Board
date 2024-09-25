@@ -1,26 +1,25 @@
-*****
+--------------
 python3 -m venv .venv
 ---
-
 source .venv/bin/activate
 .\.venv\Scripts\activate
 .\.venv\Scripts\Activate.ps1
-
-*****
+--------------
 pip freeze > requirements.txt
-
 pip install -r requirements.txt
-
-*****
+--------------
 python -m pip install Django
 python -m pip install -U pip
 python -m pip install --upgrade pip
 django-admin startproject project .
 python manage.py startapp nameOfApp
-python manage.py runserver
 python manage.py createsuperuser
-
-*****
+--------------
+python manage.py runserver
+--------------
+python manage.py migrate 
+python manage.py makemigrations
+---------------
 settings in vs code
 emmet 
 change type =
@@ -31,19 +30,10 @@ change type =
    |______________|_________|
 *******
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
- 
-
-
---------------
-python manage.py migrate 
-python manage.py makemigrations
-python manage.py runserver
----------------
 >>>> shell
 python manage.py shell
 >>>
 from posts.models import Post
-
 =======
 
 ----------------- المشروع الجديد------
