@@ -22,8 +22,9 @@ def signup(request):
     return render(request,'registration/signup.html',{'form':form})
 
 def profile(request):
-    return render(request,'registration/profile')
+    profile = Profile.objects.get(user=request.user)
+    return render(request,'accounts/profile.html',{'profile':profile})
 
 def profile_edit(request):
-    return render(request,'registration/profile_edit')
+    return render(request,'accounts/profile_edit.html',{'profile':profile})
 

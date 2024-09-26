@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+
+
+{% block content %}
+
+
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>{{ job }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ bradcam_area  -->
+
+    <div class="job_details_area">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 mx-auto ">
+                    <div class="job_sumary">
+                        <div class="summery_header">
+                            <h3>Profile Summery</h3>
+                        </div>
+                        <div class="job_content">
+                            <ul>
+                                <li>Name : <span>{{profile.user}}</span></li>
+                                <li>Email: <span>{{ profile.user.email }} Position</span></li>
+                                <li>Phone: <span> +20 {{ profile.phone_number}} </span></li>
+                                <li>Address: <span>{{profile.city}}</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+ 
+{% comment %} <button class="boxed-btn3 w-100" type="submit">Apply Now</button> {% endcomment %}
