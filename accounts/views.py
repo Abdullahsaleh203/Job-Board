@@ -1,3 +1,4 @@
+from django.urls import reverse
 from django.shortcuts import render , redirect
 from .forms import SignupForm , UserForm , ProfileForm
 from django.contrib.auth import authenticate , login
@@ -32,11 +33,13 @@ def profile_edit(request):
         profile_form = ProfileForm(request.POST,request.FILES,instance=profile)
         if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
-            profile_form.save(commit=False)
+            myprofile= profile_form.save(commit=False)
+            myprofile.user = request.user
+            myprofile.save()
+            return redirect(reverse('accounts:profile'))
     else :
         user_form = UserForm(instance=request.user)
         profile_form = ProfileForm(instance=profile)
             
-            # return redirect('/accounts/profile')
     return render(request,'accounts/profile_edit.html',{'user_form':user_form,'profile_form':profile_form})
 
