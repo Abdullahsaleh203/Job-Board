@@ -34,10 +34,11 @@
                                 <li>Email: <span>{{ profile.user.email }} Position</span></li>
                                 <li>Phone: <span> +20 {{ profile.phone_number}} </span></li>
                                 <li>Address: <span>{{profile.city}}</span></li>
+                                
                             </ul>
                         </div>
-                        <div>
-                            <a href="{% url 'accounts:profile_edit' %}" class="boxed-btn3">Update Profile</a>
+                        <div class="p-5">
+                            <a class="boxed-btn3 w-100" href="{% url 'accounts:profile_edit' %}">Update Profile</a>
                         </div>
                     </div>
                     
