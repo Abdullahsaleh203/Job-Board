@@ -53,21 +53,28 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="index.html">home</a></li>
-                                            <li><a href="jobs.html">Browse Job</a></li>
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="{% url 'jobs:job_list' %}">Browse Job</a></li>
 
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="{% url 'contact:contact' %}">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
-                                    <div class="phone_num d-none d-xl-block">
-                                        <a href="#">Log in</a>
-                                    </div>
+                                    {% if request.user.is_authenticated %}
+                                        <div class="phone_num d-none d-xl-block">
+                                            <a href="{% url 'accounts:profile' %}">Profile</a>
+                                        </div>
+                                    
+                                    {% else %}
+                                        <div class="phone_num d-none d-xl-block">
+                                            <a href="{% url 'login' %}">Log in</a>
+                                        </div>
+                                    {% endif %}
                                     <div class="d-none d-lg-block">
-                                        <a class="boxed-btn3" href="#">Post a Job</a>
+                                        <a class="boxed-btn3" href="{% url 'jobs:add_job' %}">Post a Job</a>
                                     </div>
                                 </div>
                             </div>
