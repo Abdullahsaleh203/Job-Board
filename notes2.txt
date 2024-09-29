@@ -107,3 +107,8 @@ library :
     startproject
     test
     testserver
+
+
+
+Email Documentation :
+    https://docs.djangoproject.com/en/5.1/topics/email/
