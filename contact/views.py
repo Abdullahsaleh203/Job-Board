@@ -11,12 +11,12 @@ def send_message(request):
         subject = request.POST['subject']
         email = request.POST['email']
         message = request.POST['message']
-    send_mail(
-            subject,
-            message,
-            email,
-            [settings.EMAIL_HOST_USER],
-        )
-        
+        send_mail(
+                subject,
+                message,
+                email,
+                [settings.EMAIL_HOST_USER],
+            )
+            
     return render(request,'contact/contact.html',{'myinfo':myinfo})
 
