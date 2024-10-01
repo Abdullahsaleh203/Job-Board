@@ -9,4 +9,5 @@ def job_list_api(request):
     jobs = Job.objects.all()
     data = JobSerializer(jobs, many=True).data
     return Response({'data':data})
-  
+
+
