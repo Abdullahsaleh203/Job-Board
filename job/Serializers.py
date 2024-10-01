@@ -1,3 +1,4 @@
+# get the data from the database and convert it into JSON format
 from rest_framework import serializers
 from .models import Job
 
