@@ -19,10 +19,10 @@ def job_details_api(request,id):
 
 
 class JobListApi(generics.ListCreateAPIView):
-    model = Job
     queryset = Job.objects.all()
     serializer_class = JobSerializer
-   
+
+
 
 class JobDetailsApi(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = JobSerializer
