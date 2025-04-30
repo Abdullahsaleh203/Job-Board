@@ -1,7 +1,7 @@
-# Django-Job-Board
+# Job-Board
 
 ## Project Overview
-Django-Job-Board is a web application built using Django that allows users to post and search for job listings. The project aims to provide a platform for job seekers and employers to connect and find suitable job opportunities.
+Job-Board is a web application built using Django that allows users to post and search for job listings. The project aims to provide a platform for job seekers and employers to connect and find suitable job opportunities.
 
 ## Features
 - User authentication and authorization
@@ -21,7 +21,7 @@ Django-Job-Board is a web application built using Django that allows users to po
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Abdullahsaleh203/Django-Job-Board.git
+   git clone https://github.com/Abdullahsaleh203/Job-Board.git
    cd Django-Job-Board
 Create a virtual environment and activate it:
 
